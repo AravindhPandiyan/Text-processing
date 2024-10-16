@@ -1,0 +1,3 @@
+use_column: sentence
+
+batch_size: 16

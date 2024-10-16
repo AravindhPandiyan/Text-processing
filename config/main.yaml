@@ -1,0 +1,15 @@
+defaults:
+  - process: process1
+  - model: model1
+  - _self_
+
+data:
+  raw:
+    train: ../data/raw/train.parquet
+    val: ../data/raw/val.parquet
+
+  processed:
+    train: ../data/processed/train.parquet
+    val: ../data/processed/val.parquet
+
+  final: ../data/final/metrics.csv

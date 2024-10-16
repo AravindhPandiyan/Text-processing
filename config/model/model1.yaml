@@ -1,0 +1,3 @@
+name: Logistic regression
+parameters:
+  steps: 200
