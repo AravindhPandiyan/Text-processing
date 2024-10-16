@@ -1,6 +1,6 @@
 ---
 description: |
-    API documentation for modules: src, src.load_data, src.metrics, src.process, src.train_model.
+  API documentation for modules: src, src.load_data, src.metrics, src.process, src.train_model.
 
 lang: en
 
@@ -12,14 +12,10 @@ linkcolor: blue
 links-as-notes: true
 ...
 
-
-    
 # Module `src` {#id}
 
 Source code of your project
 
-
-    
 ## Sub-modules
 
 * [src.load_data](#module-srcload_data-id)
@@ -27,30 +23,15 @@ Source code of your project
 * [src.process](#module-srcprocess-id)
 * [src.train_model](#module-srctrain_model-id)
 
-
-
-
-
-
-    
 # Module `src.load_data` {#id}
 
 This is code is used to Load the dataset into memory.
 
 Author: Aravindh P
 
-
-
-
-    
 ## Functions
 
-
-    
 ### Function `load_train_data` {#id}
-
-
-
 
 >     def load_train_data(
 >         paths: dict
@@ -59,23 +40,16 @@ Author: Aravindh P
 
 This functions loads the training data into memory.
 
-
 Args
 -----=
 **```paths```**
 :   This contains the paths of the datasets.
 
-
-
 Returns
 -----=
 They data is finally returned as dependent features and target variable.
 
-    
 ### Function `load_val_data` {#id}
-
-
-
 
 >     def load_val_data(
 >         paths: dict
@@ -84,40 +58,24 @@ They data is finally returned as dependent features and target variable.
 
 This functions loads the validation data into memory.
 
-
 Args
 -----=
 **```paths```**
 :   This contains the paths of the datasets.
 
-
-
 Returns
 -----=
 They data is finally returned as dependent features and target variable.
 
-
-
-
-    
 # Module `src.metrics` {#id}
 
 This is code is used to calculate the metrics for the given model predictions.
 
 Author: Aravindh P
 
-
-
-
-    
 ## Functions
 
-
-    
 ### Function `evaluate_model` {#id}
-
-
-
 
 >     def evaluate_model(
 >         y_true,
@@ -126,7 +84,6 @@ Author: Aravindh P
 
 
 This function is used to calculate the classification model metrics.
-
 
 Args
 -----=
@@ -143,28 +100,15 @@ Returns
 -----=
 It finally calculates all the metrics and returns in a dictionary.
 
-
-
-
-    
 # Module `src.process` {#id}
 
 This is code is used to process the dataset.
 
 Author: Aravindh P
 
-
-
-
-    
 ## Functions
 
-
-    
 ### Function `process_data` {#id}
-
-
-
 
 >     def process_data(
 >         config: omegaconf.dictconfig.DictConfig
@@ -173,19 +117,12 @@ Author: Aravindh P
 
 This is the configuration function used process the raw data.
 
-
 Args
 -----=
 **```config```**
 :   This is the YAML config info.
 
-
-
-    
 ### Function `process_text` {#id}
-
-
-
 
 >     def process_text(
 >         path: str,
@@ -194,8 +131,8 @@ Args
 >     ) ‑> pandas.core.frame.DataFrame
 
 
-This function is used to process all the sentences in the given data series, by removing stopwords and lemmatization of the words.
-
+This function is used to process all the sentences in the given data series, by removing stopwords and lemmatization of
+the words.
 
 Args
 -----=
@@ -216,27 +153,14 @@ Returns
 -----=
 It returns the processed data series data-frame.
 
-
-
-
-    
 # Module `src.train_model` {#id}
 
 This code is used to train the model.
 Author: Aravindh P
 
-
-
-
-    
 ## Functions
 
-
-    
 ### Function `create_pipeline` {#id}
-
-
-
 
 >     def create_pipeline(
 >         steps: int,
@@ -246,7 +170,6 @@ Author: Aravindh P
 
 
 This function is used to create the modeling pipeline.
-
 
 Args
 -----=
@@ -267,11 +190,7 @@ Returns
 -----=
 The function returns the constructed pipeline.
 
-    
 ### Function `train_model` {#id}
-
-
-
 
 >     def train_model(
 >         config: omegaconf.dictconfig.DictConfig
@@ -279,7 +198,6 @@ The function returns the constructed pipeline.
 
 
 This function is configuration function used to train the model.
-
 
 Args
 -----=

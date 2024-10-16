@@ -85,15 +85,15 @@ Output:
 ```yaml
 process is powered by Hydra.
 
-== Configuration groups ==
-Compose your configuration from those groups (group=option)
+  == Configuration groups ==
+  Compose your configuration from those groups (group=option)
 
 model: model1
 process: process1
 
 
-== Config ==
-Override anything in the config (foo.bar=value)
+  == Config ==
+  Override anything in the config (foo.bar=value)
 
 process:
   use_columns: sentence
