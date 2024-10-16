@@ -1,3 +1,4 @@
 name: Logistic regression
 parameters:
   steps: 200
+save_path: models/model.pkl

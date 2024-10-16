@@ -5,11 +5,11 @@ defaults:
 
 data:
   raw:
-    train: ../data/raw/train.parquet
-    val: ../data/raw/val.parquet
+    train: data/raw/train.parquet
+    val: data/raw/val.parquet
 
   processed:
-    train: ../data/processed/train.parquet
-    val: ../data/processed/val.parquet
+    train: data/processed/train.parquet
+    val: data/processed/val.parquet
 
-  final: ../data/final/metrics.csv
+  final: data/final/metrics.csv

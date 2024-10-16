@@ -12,6 +12,10 @@ gen_req:
 	@echo Generating requirements.txt file...
 	poetry export -f requirements.txt --without-hashes --output requirements.txt
 
+exec:
+	@echo Processing and Training Model...
+	python -m src.process
+
 docs_host:
 	@echo View API documentation...
 	pdoc src --http localhost:8080

@@ -4,6 +4,7 @@ Author: Aravindh P
 """
 
 import hydra
+import joblib
 import pandas as pd
 from omegaconf import DictConfig
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -78,6 +79,8 @@ def train_model(config: DictConfig):
     metrics = pd.concat([train_metric, val_metric], axis=1)
     metrics.to_csv(config.data.final)
     print(metrics)
+
+    joblib.dump(pipe, config.model.save_path)
 
 
 if __name__ == "__main__":
