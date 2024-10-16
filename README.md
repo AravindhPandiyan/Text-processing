@@ -35,15 +35,12 @@
 ├── .pre-commit-config.yaml         # configurations for pre-commit
 ├── pyproject.toml                  # dependencies for poetry
 ├── README.md                       # describe your project
-├── src                             # store source code
-│   ├── __init__.py                 # make src a Python module 
-│   ├── process.py                  # process data before training model
-│   ├── train_model.py              # train model
-│   └── utils.py                    # store helper functions
-└── tests                           # store tests
-    ├── __init__.py                 # make tests a Python module 
-    ├── test_process.py             # test functions for process.py
-    └── test_train_model.py         # test functions for train_model.py
+├── requirements.txt                # This contains the requirements file
+└── src                             # store source code
+    ├── __init__.py                 # make src a Python module 
+    ├── process.py                  # process data before training model
+    ├── train_model.py              # train model
+    └── utils.py                    # store helper functions
 ```
 
 ## Set up the environment
